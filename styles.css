@@ -1,0 +1,90 @@
+/* styles.css - Shared styles for all menus */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .menu-container {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-header {
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  button:hover span {
+    background: none;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+  .back-button {
+    margin-top: 20px;
+  }
+  /* GitHub Button */
+  .github-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+  .github-button img {
+    width: 50px;
+    height: 50px;
+  }
+  .github-button:hover {
+    transform: scale(1.1);
+  }
